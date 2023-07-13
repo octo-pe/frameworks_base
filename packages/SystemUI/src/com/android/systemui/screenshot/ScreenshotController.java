@@ -1156,15 +1156,6 @@ public class ScreenshotController {
     }
 
     private void playCameraSound() {
-        mCameraSound.addListener(() -> {
-            try {
-                MediaPlayer player = mCameraSound.get();
-                if (player != null) {
-                    player.start();
-                }
-            } catch (InterruptedException | ExecutionException e) {
-            }
-        }, mBgExecutor);
     }
 
     /**
